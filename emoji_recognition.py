@@ -69,7 +69,7 @@ if(NUMBER_OF_EMOJIS == 1):
     x_axis = ["Angry", "Pule", "Cry", "Fear", "Happy", "Kiss", "Heart", "Love", "Sad", "Smile", "Tongue", "Wink", "Wow"]
     y_axis = []
     for y in np.array(val[0]).astype(np.int64):
-        y_axis.append((y + 6144)/112)
+        y_axis.append((y + 6144)/122)
     
     plt.barh(x_axis, y_axis, color=colors)
     plt.xlabel("Similarity (%)")
